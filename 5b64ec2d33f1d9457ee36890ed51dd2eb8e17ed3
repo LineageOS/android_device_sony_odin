@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bacf61ea_15e9211b",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 5574
+      },
+      "writtenOn": "2015-02-14T04:45:44Z",
+      "side": 1,
+      "message": "This should be 96 too, Kali didn\u0027t enable the volume rocker wake just for the sake of \"power button design is too good that no one needs volume buttons\"",
+      "revId": "5b64ec2d33f1d9457ee36890ed51dd2eb8e17ed3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
