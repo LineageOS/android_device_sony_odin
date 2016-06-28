@@ -20,14 +20,14 @@ import org.cyanogenmod.internal.util.FileUtils;
 
 public class VibratorHW {
 
-    private static String LEVEL_PATH = "/sys/devices/i2c-2/2-0049/intensity";
+    private static String LEVEL_PATH = "/sys/class/timed_output/vibrator/level";
 
     public static boolean isSupported() {
         return true;
     }
 
     public static int getMaxIntensity()  {
-        return 8;
+        return 15;
     }
     public static int getMinIntensity()  {
         return 0;
