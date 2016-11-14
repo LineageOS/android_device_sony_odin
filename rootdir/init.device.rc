@@ -1,3 +1,17 @@
+on early-boot
+
+    # Proximity sensor configuration
+    # Duration Cycle. Valid range is 0 - 3.
+    write /sys/bus/i2c/devices/2-0054/cycle 0
+    # Number of pulses in burst. Valid range is 0 - 15.
+    write /sys/bus/i2c/devices/2-0054/nburst 5
+    # Burst frequency. Valid range is 0 - 3.
+    write /sys/bus/i2c/devices/2-0054/freq 1
+    # sensor threshold. Valid range is 0 - 15 (0.12V - 0.87V)
+    write /sys/bus/i2c/devices/2-0054/threshold 5
+    # RFilter. Valid range is 0 - 3.
+    write /sys/bus/i2c/devices/2-0054/filter 0
+
 on boot
     # Owner for the proximity sensor
     chown system system /sys/devices/i2c-2/2-0054/threshold
