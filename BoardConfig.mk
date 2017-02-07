@@ -32,6 +32,12 @@ TARGET_KERNEL_CONFIG := fusion3_odin_defconfig
 BACKLIGHT_PATH := /sys/class/leds/lm3533-lcd-bl-1/brightness
 SECONDARY_BACKLIGHT_PATH := /sys/class/leds/lm3533-lcd-bl-2/brightness
 
+# TWRP
+TW_THEME := portrait_hdpi
+TW_BRIGHTNESS_PATH := /sys/class/leds/lm3533-lcd-bl-1/brightness
+TW_SECONDARY_BRIGHTNESS_PATH := /sys/class/leds/lm3533-lcd-bl-2/brightness
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+
 # Partition sizes
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12595400704
 
